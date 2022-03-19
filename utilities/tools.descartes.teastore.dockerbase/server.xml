@@ -51,7 +51,7 @@
       </Realm>
       <Host name="localhost"  appBase="webapps"
             unpackWARs="true" autoDeploy="true">
-            <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" prefix="localhost_access_log." suffix=".txt" pattern='end_ms:%{end:msec}t rt_usec:%D code:%s req:"%r"' buffered="false"/>
+            <Valve className="org.apache.catalina.valves.AccessLogValve" directory="accesslogs" prefix="localhost_access_log." suffix=".txt" pattern='end_ms:%{end:msec}t rt_usec:%D code:%s req:"%r"' buffered="false"/>
 
       </Host>
     </Engine>

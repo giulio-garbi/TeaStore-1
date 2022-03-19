@@ -29,6 +29,6 @@ public class HeartbeatInfo {
 	 * @return true if alive
 	 */
 	public boolean isAlive() {
-		return true;
+		return System.currentTimeMillis() - lastHeartbeat < 10000;
 	}
 }

@@ -62,7 +62,7 @@ public class RegistryClient {
   private Service myService = null;
 
   private static final int LOAD_BALANCER_REFRESH_INTERVAL_MS = 2500;
-  private static final int HEARTBEAT_INTERVAL_MS = 1000000000;
+  private static final int HEARTBEAT_INTERVAL_MS = 2500;
 
   private ScheduledExecutorService loadBalancerUpdateScheduler = Executors
       .newSingleThreadScheduledExecutor();
